@@ -7,11 +7,7 @@ var multer = require("multer");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var session      = require('express-session');
-var Alexa = require('alexa-sdk');
 
-exports.handler = function(event, context, callback){
-    var alexa = Alexa.handler(event, context, callback);
-};
 var configDB = require('./config/database.js');
 mongoose.Promise = Promise;
 
@@ -47,6 +43,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
   });
 // routes ======================================================================
 require('./routes/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./index.js');
 
 app.listen(port, function() {
   console.log("The Magic running on port "+ port);
