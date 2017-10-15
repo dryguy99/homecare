@@ -3,9 +3,13 @@
 //---------- ZIP CODE TO LAT/LNG CONVERSION ----------//
 
 var userKey03 = "FGkX98QWG4pBdE6b5TdFIinfuhigQC8cM2q6EYov5rBtba0CcAvsdntEnz6BbJ4l";
+
+//ideally this would be input by alex's location settings, permission from user to use
 var zipcode = "08901";
 
 var queryURL03 = "https://cors-anywhere.herokuapp.com/https://www.zipcodeapi.com/rest/"+userKey03+"/info.json/"+zipcode+"/degrees;"
+
+var doctorsObject = [];
 
 $("#button").on("click", function(){
 	$.ajax({
@@ -40,7 +44,7 @@ $("#button").on("click", function(){
 		          //console.log(queryURL02);
 		          //console.log(response);
 
-              var doctorsObject = [];
+              //var doctorsObject = [];
 
 		          for (var i = 0; i < 5; i++){
 			          
@@ -73,14 +77,31 @@ $("#button").on("click", function(){
 
               };
 
-              console.log(doctorsObject);
-
 		        });
 
         });
+
 });
 
-/*
+
+
+
+
+function sendData() {
+    $.ajax({
+        url: '/helloworld',
+        type: 'POST',
+        data: { json: JSON.stringify({
+            doctorsObject
+        })},
+        dataType: 'json'
+    });
+};
+
+var doctorsJSON = JSON.stringify(doctorsObject);
+
+
+
 // app/routes.js
 function myRoutes(app, passport) {
 
@@ -309,7 +330,7 @@ module.exports = myRoutes;
 
 
 
-
+/*
 //---------- SPECIALTIES ----------//
 
 var userKey01 = "5deae9ede4889f9afe0e0dcfb8e37c70";
