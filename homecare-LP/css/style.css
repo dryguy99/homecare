@@ -269,8 +269,8 @@ clip-path: polygon(50% 90%, 80% 85%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75
     opacity: 0.85;
 }
 
-#google_map {
-    height: 500px;
+#phoneDiv {
+    height: 460px;
 }
 
 footer {
