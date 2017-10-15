@@ -149,6 +149,9 @@ p{
     width: 100%;
 }
 
+.smallDiv{
+    height: 400px;
+}
 
 /* vertical-centered text */
 
@@ -293,6 +296,7 @@ clip-path: polygon(50% 90%, 80% 85%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75
 
 #phoneDiv {
     height: 460px;
+    padding-top: 50px;
 }
 
 footer {
@@ -314,6 +318,7 @@ footer .glyphicon {
     color: #333333;
     font-size: 60px;
 }
+
 
 
 #phoneDiv {
