@@ -5,93 +5,123 @@ is available at http://www.script-tutorials.com/bootstrap-one-page-template-with
 Copyright (c) Script Tutorials. All rights reserved.
 This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
 ================================================================================================= */
+
+
 /* general styles */
+
 html,
 body {
     height: 100%;
     width: 100%;
     font-family: "Quicksand", sans-serif;
 }
+
+p{
+    text-align: left;
+}
+
+
 #logo-small {
     width: 64;
     height: 64px;
     position: relative;
 }
+
 .navbar {}
+
 .navbar-default {
     background-color: #bff5ff;
     border-color: #22688e;
 }
+
 .navbar-default .navbar-brand {
     font-size: 1.2em;
     color: #000000;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #f96dc4;
 }
+
 .navbar-default .navbar-text {
     color: #000000;
 }
+
 .navbar-default .navbar-nav>li>a {
     color: #000000;
 }
+
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #f96dc4;
 }
+
 .navbar-default .navbar-nav>li>.dropdown-menu {
     background-color: #bff5ff;
 }
+
 .navbar-default .navbar-nav>li>.dropdown-menu>li>a {
     color: #000000;
 }
+
 .navbar-default .navbar-nav>li>.dropdown-menu>li>a:hover,
 .navbar-default .navbar-nav>li>.dropdown-menu>li>a:focus {
     color: #f96dc4;
     background-color: #22688e;
 }
+
 .navbar-default .navbar-nav>li>.dropdown-menu>li.divider {
     background-color: #22688e;
 }
+
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
     color: #f96dc4;
     background-color: #22688e;
 }
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #f96dc4;
     background-color: #22688e;
 }
+
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #f96dc4;
     background-color: #22688e;
 }
+
 .navbar-default .navbar-toggle {
     border-color: #22688e;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #22688e;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000000;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border-color: #000000;
 }
+
 .navbar-default .navbar-link {
     color: #000000;
 }
+
 .navbar-default .navbar-link:hover {
     color: #f96dc4;
 }
+
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #000000;
@@ -107,19 +137,27 @@ body {
         background-color: #22688e;
     }
 }
+
+
 /* padded section */
+
 .pad-section {
     padding: 50px 0;
 }
+
 .pad-section img {
     width: 100%;
 }
+
+
 /* vertical-centered text */
+
 .text-vcenter {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
+
 .text-vcenter h1 {
     font-family: "Lora", serif;
     font-size: 4.5em;
@@ -130,13 +168,17 @@ body {
     top: -1.5em;
     color: #22688E;
 }
+
 .text-vcenter h3 {
     position: relative;
     color: #bff5ff;
     font-size: 32px;
     top: 10px;
 }
+
+
 /* additional sections */
+
 #home {
     background: url(../images/stretching.jpeg) no-repeat center center fixed;
     opacity: 0.85;
@@ -149,21 +191,28 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+
 h2 {
     color: #F96DC4;
 }
+
 #logo-big {
     width: 70%;
     height: 70%;
     position: relative;
 }
+
 p.lead {
     text-align: left;
 }
+
 #services {
     background-color: #306d9f;
     color: #ffffff;
 }
+
+
 #services .glyphicon {
     border: 2px solid #FFFFFF;
     border-radius: 50%;
@@ -175,34 +224,42 @@ p.lead {
     vertical-align: middle;
     width: 140px;
 }
+
 #ankle,
 #knee {
-    width: 53%;
+    width: 50%;
 }
-@media (max-width: 1200px) and (min-width: 992px) {
+
+
+/*@media (max-width: 1200px) and (min-width: 992px) {
     #ankle,
     #knee {
         width: 66%;
     }
 }
+
+
 @media (max-width: 991px) and (min-width: 768px) {
     #ankle,
     #knee {
         width:89%;
     }
-}
+}*/
+
 #about {
     min-height:500px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
+
 /*polygon {
   -webkit-clip-path: polygon(50% 90%, 80% 85%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75%, 20% 85%);
 clip-path: polygon(50% 90%, 80% 85%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75%, 20% 85%);
 }
 */
+
 #information {
-    background: url(../images/estate.jpg) no-repeat center center fixed;
+    background: url(../images/stretch-by-sea.jpeg) no-repeat center center fixed;
     display: table;
     height: 800px;
     position: relative;
@@ -212,11 +269,43 @@ clip-path: polygon(50% 90%, 80% 85%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75
     -o-background-size: cover;
     background-size: cover;
 }
+
+
+.list-left {
+    text-align:left;
+}
+
+.list-right {
+    text-align:left;
+
+}
+.list-left {
+    float:left;
+}
+
+.list-right {
+    float:left;
+}
+
 #information .panel {
     opacity: 0.85;
 }
-#google_map {
-    height: 500px;
+
+#phoneDiv {
+    height: 460px;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer .glyphicon {
+    color: #333333;
+    font-size: 60px;
+}
+
+footer .glyphicon:hover {
+    color: #306d9f;
 }
 footer {
     padding: 20px 0;
